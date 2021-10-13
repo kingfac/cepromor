@@ -18,7 +18,7 @@
         <h1 class="p-3 text-2xl font-bold text-center text-white bg-orange-transparent">FAIRE UN DON A CEPROMO&AEPH</h1>
     </div>
     <div class="flex flex-col min-h-screen">
-        <div class="px-10 py-4 text-xl text-justify xl:px-60">
+        <div class="px-10 py-4 mb-10 text-xl text-justify xl:px-60">
             <h1 class="py-6 text-3xl font-extrabold text-center text-orange">DON EN ESPECE (FINANCE)</h1>
             <p class="text-center">Pour ceux qui veulent nous faire un don financier veillez effectuer un virement aux comptes ci-dessous</p>
         </div>
@@ -40,7 +40,8 @@
         </div>
         <div class="px-10 py-4 text-xl text-justify xl:px-60">
             <h1 class="py-6 text-3xl font-extrabold text-center text-orange">DON EN NATURE (RESSOURCES NON FINANCIERES)</h1>
-            <p class="text-center">Pour ceux qui veulent nous faire un don en nature (Matériel et Autres) veillez nous contacter à travers les coordonnées inscrites dans la section <a href="#footer" class="border-b border-yellow-600 text-orange">Contacts</a></p>
+            <p class="mb-10 text-center">Pour ceux qui veulent nous faire un don en nature (Matériel et Autres) veillez nous écrire ici bas</p>
+            <livewire:client.requetes :id="2" />
         </div>
     </div>
     
