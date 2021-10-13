@@ -5,14 +5,14 @@
         <div class="flex items-center justify-center w-screen splide hv-60">
             <div class="splide__track">
                 <ul class="splide__list">
-                    @if ($infos)
+                    {{-- @if ($infos)
                     @foreach ($infos as $inf)
                     <li class="splide__slide">
                         <img src="{{asset('storage/headerInfo/'.$inf->id.'.png')}}" alt="" srcset="" class="object-cover w-screen hv-60 animate__animated animate__flash">
                         
                     </li>
                 @endforeach
-                    @endif
+                    @endif --}}
                 </ul>
             </div>
             <div class="absolute items-center w-4/5 text-center bg-blue-900 splide__progress md:bottom-48 bottom-36 md:w-1/2">
