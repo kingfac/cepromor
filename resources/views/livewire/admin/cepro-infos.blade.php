@@ -32,7 +32,7 @@
                         @endforeach
                     </div>
                 </div>
-                <div x-html="$wire.info" class="mt-5"></div>
+                {{-- <div x-html="$wire.info" class="mt-5"></div> --}}
             </div>
             
         </div>
