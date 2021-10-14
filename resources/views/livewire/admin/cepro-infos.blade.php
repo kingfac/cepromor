@@ -21,7 +21,7 @@
                     <div class="flex flex-col gap-2 divide-y-2">
                         @foreach ($infos as $ligne)
                             <div class="flex flex-col">
-                                <button class="flex justify-between p-2 font-bold text-white transition duration-300 bg-blue-900 shadow cursor-pointer hover:bg-blue-800" wire:click="charger({{$ligne}})" {{-- onclick="infoDetaille({{$ligne}})" --}}>
+                                <button class="flex justify-between p-2 font-bold text-white transition duration-300 bg-blue-900 shadow cursor-pointer hover:bg-blue-800" wire:click="charger({{$ligne}})" onclick="infoDetaille({{$ligne}})">
                                     <h1><?php echo $ligne->lib; ?></h1>
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
                                 </button>
