@@ -35,6 +35,16 @@
     </div>
     <div class="flex-1">
         <div class="grid grid-cols-4 gap-4">
+            @if ($photo)
+            <a class="flex flex-col justify-center p-2 text-center shadow" href="#">
+                {{-- @if (Storage::exists('public/actualite/'.$inf->id.'.png'))     --}}
+                    {{-- <img src="{{asset('storage/actualite/'.$inf->id.'.png')}}" > --}}
+                    <img src="{{ $photo->temporaryUrl() }}" alt="Pas d'image pour cette actualite" srcset="" class="flex-1">
+                {{-- @endif --}}
+                <h1 class="text-lg font-bold ">Previsualiser l'image</h1>
+                <p class="text-gray-400">{{$titre}}  {{$sous_titre}}</p>
+            </a>      
+    @endif
             @foreach ($actualites as $inf)
                 <a class="flex flex-col justify-center p-2 text-center shadow" href="#" wire:click="charger({{$inf}})">
                     @if (Storage::exists('public/actualite/'.$inf->id.'.png'))    
