@@ -44,9 +44,9 @@
             <img src="{{asset('storage/headerInfo/'.$infos[3]->id.'.png')}}" alt="" class="object-cover">
         </div>
         <div class="px-6 py-2 text-justify content">
-            <h1 class="text-xl font-bold">{{$ceproInfos[0]->lib}}</h1>
+            <h1 class="text-xl font-bold">{{$ceproInfos[2]->lib}}</h1>
             <div class="mt-3 text-justify text-article">
-                <?php echo $ceproInfos[0]->info; ?>
+                <?php echo $ceproInfos[2]->info; ?>
             </div>...
         </div>
         <a href="{{route('pages', ['page'=>'cepromor', 'el'=>'2'])}}" class="w-11/12 px-6 py-3 mb-2 text-lg font-bold text-center text-white bg-yellow-600 rounded">Lire la suite</a>
@@ -57,9 +57,9 @@
             <img src="{{asset('storage/headerInfo/'.$infos[0]->id.'.png')}}" alt="" class="object-cover">
         </div>
         <div class="px-6 py-2 text-justify content">
-            <h1 class="text-xl font-bold">{{$ceproInfos[0]->lib}}</h1>
+            <h1 class="text-xl font-bold">{{$ceproInfos[3]->lib}}</h1>
             <div class="mt-3 text-justify text-article">
-                <?php echo $ceproInfos[0]->info; ?>
+                <?php echo $ceproInfos[3]->info; ?>
             </div>...
         </div>
         <a href="{{route('pages', ['page'=>'cepromor', 'el'=>'3'])}}" class="w-11/12 px-6 py-3 mb-2 text-lg font-bold text-center text-white bg-yellow-600 rounded">Lire la suite</a>
