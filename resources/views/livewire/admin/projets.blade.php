@@ -18,11 +18,26 @@
         <div class="grid grid-cols-2 gap-4 divide-y-2">
             <div class="p-2 shadow">   
                 <h1 class="text-xl font-bold divide-x-4 divide-gray-300">Gestion des projets</h1>
-                <div class="flex flex-col gap-8 py-10">
+                <div class="flex flex-col gap-8 py-10"
+                    x-data="{ isUploading: false, progress: 0 }"
+                    x-on:livewire-upload-start="isUploading = true"
+                    x-on:livewire-upload-finish="isUploading = false"
+                    x-on:livewire-upload-error="isUploading = false"
+                    x-on:livewire-upload-progress="progress = $event.detail.progress">
                     <input type="text" class="w-full p-2 placeholder-gray-700 border-2 rounded-lg" placeholder="Nom du projet" id="nom" wire:model="nom">
                     <textarea name="h" id="descri" wire:model="descri" class="p-2 placeholder-gray-600 transition transform border" placeholder="Votre description" ></textarea>
                     <input type="text" class="w-full p-2 placeholder-gray-700 border-2 rounded-lg" placeholder="url youtube du projet" id="nom" wire:model="url">
-                    <input type="file" name="photo" id="photos" wire:model="photos" multiple>
+                    <label class="flex flex-col items-center justify-center px-4 py-2 tracking-wide text-purple-600 uppercase transition-all duration-150 ease-linear bg-white border rounded-md shadow-md cursor-pointer border-blue hover:bg-purple-600 hover:text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                        <span class="px-3 mt-2 text-base leading-normal">Parcourir une image</span>
+                        <input type='file' class="hidden" wire:model="photos" multiple id="photos" name="photo"/>
+                        {{-- <input type="file" name="photo" id="photos" wire:model="photos" multiple> --}}
+                        <div x-show="isUploading">
+                            <progress max="100" x-bind:value="progress"></progress>
+                            <b x-text="progress"></b>%
+                        </div>
+                    </label>
+
                     <div class="grid grid-cols-4 gap-4">
                         <button class="p-3 text-lg font-bold text-white bg-blue-900" @click="modalController(0,'Confirmation','Etes-vous sûr de vouloir enregistrer')">Enregistrer</button>        
                         <button class="p-3 text-lg font-bold text-white bg-yellow-600" @click="modalController(1,'Confirmation','Etes-vous sûr de vouloir modifier')">Modifier</button>        
