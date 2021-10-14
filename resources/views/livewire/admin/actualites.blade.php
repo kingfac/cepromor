@@ -17,6 +17,7 @@
                 <input type="text" placeholder="Le sous titre de l'actualite" class="p-2 border rounded" wire:model="sous_titre">
                 <textarea name="" id="" class="flex-1 p-2 border rounded" placeholder="La description de l'actualite" wire:model="descri"></textarea>
             </div>
+            {{-- Input et progress bar --}}
             <div class="grid grid-rows-2 gap-4"
             x-data="{ isUploading: false, progress: 0 }"
             x-on:livewire-upload-start="isUploading = true"
@@ -29,8 +30,8 @@
                     <span class="px-3 mt-2 text-base leading-normal">Parcourir une image</span>
                     <input type='file' class="hidden" wire:model="photo" />
                     <div x-show="isUploading">
-                        <b x-text="progress"></b>%
                         <progress max="100" x-bind:value="progress"></progress>
+                        <b x-text="progress"></b>%
                     </div>
                 </label>
                 <button class="p-3 text-lg font-bold text-white bg-gray-500" wire:click="resetFields" @click="detail='';sous_titre='';id=0">Clear</button>        
