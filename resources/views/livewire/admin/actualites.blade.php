@@ -29,7 +29,7 @@
                     <span class="px-3 mt-2 text-base leading-normal">Parcourir une image</span>
                     <input type='file' class="hidden" wire:model="photo" />
                     <div x-show="isUploading">
-                        <p x-text="progress"></p>%
+                        <b x-text="progress"></b>%
                         <progress max="100" x-bind:value="progress"></progress>
                     </div>
                 </label>
