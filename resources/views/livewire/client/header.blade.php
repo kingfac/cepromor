@@ -5,14 +5,14 @@
         <div class="flex items-center justify-center w-screen splide hv-60">
             <div class="splide__track">
                 <ul class="splide__list">
-                    {{-- @if ($infos)
+                    @if ($infos)
                     @foreach ($infos as $inf)
                     <li class="splide__slide">
                         <img src="{{asset('storage/headerInfo/'.$inf->id.'.png')}}" alt="" srcset="" class="object-cover w-screen hv-60 animate__animated animate__flash">
                         
                     </li>
                 @endforeach
-                    @endif --}}
+                    @endif
                 </ul>
             </div>
             <div class="absolute items-center w-4/5 text-center bg-blue-900 splide__progress md:bottom-48 bottom-36 md:w-1/2">
@@ -24,7 +24,7 @@
             <div class="flex flex-col items-center  text-white hv-60 {{-- bg-black-transparent --}} w-screen left-0 absolute top-0 pt-20">
                 <img src="{{asset('images/logocepro.png')}}" alt="" srcset="" class="mb-5 h-1/4">
                 <p class="px-5 mb-2 bg-blue-900">BIENVENUE</p>
-                <h1 class="pb-3 text-4xl font-extrabold">{{-- {{$infos[0]->titre}} --}}</h1>
+                <h1 class="pb-3 text-4xl font-extrabold">{{$infos[0]->titre}}</h1>
                 {{-- <h1 class="text-6xl font-bold">Ensemble Aidons Nos Frères</h1> --}}
                 <h1 class="p-4 text-lg font-extrabold xl:text-6xl bg-black-transparent animate__animated animate__bounceInDown md:text-4xl lg:text-4xl">{{$infos[0]->descri}}</h1>
                                 
