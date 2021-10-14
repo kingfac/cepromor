@@ -10,7 +10,7 @@
         <div class="splide" id="actuSplide">
             <div class="splide__track">
                 <ul class="splide__list">
-                    @foreach ($actualites as $actu)
+                    {{-- @foreach ($actualites as $actu)
                         <li class="splide__slide">
                             <img src="{{asset('storage/actualite/'.$actu->id.'.png')}}" alt="" srcset="" class="object-cover w-screen hv-60 animate__animated animate__flash">
                             <div class="relative h-48 px-5 py-5 -mt-40 md:-mt-28 bg-actu-transparent md:h-36 -top-8">
@@ -18,7 +18,7 @@
                                 <p class="text-justify text-white">{{$actu->descri}}</p>
                             </div>
                         </li>   
-                    @endforeach
+                    @endforeach --}}
                 </ul>
             </div>
         </div>

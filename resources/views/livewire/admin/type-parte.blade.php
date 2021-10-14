@@ -20,7 +20,7 @@
             <div class="p-2 shadow">   
                 <h1 class="text-xl font-bold divide-x-4 divide-gray-300">Gestion des type de partenaire</h1>
                 <div class="flex flex-col gap-8 py-10">
-                    <input type="text" class="w-full p-2 placeholder-gray-700 border-2 rounded-lg" placeholder="lib de l'activité" id="lib" wire:model="lib">
+                    <input type="text" class="w-full p-2 placeholder-gray-700 border-2 rounded-lg" placeholder="Saisir le type ici" id="lib" wire:model="lib">
                     {{-- <textarea name="h" id="detail" wire:model="detail" class="p-2 placeholder-gray-600 transition transform border" placeholder="Votre detail" ></textarea> --}}
                     <div class="grid grid-cols-4 gap-4">
                         <button class="p-3 text-lg font-bold text-white bg-blue-900" @click="modalController(0,'Confirmation','Etes-vous sûr de vouloir enregistrer')">Enregistrer</button>        
