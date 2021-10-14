@@ -29,7 +29,8 @@
                     <span class="px-3 mt-2 text-base leading-normal">Parcourir une image</span>
                     <input type='file' class="hidden" wire:model="photo" />
                     <div x-show="isUploading">
-                        <progress max="100" x-bind:value="progress"><p x-text="progress"></p></progress>
+                        <p x-text="progress"></p>%
+                        <progress max="100" x-bind:value="progress"></progress>
                     </div>
                 </label>
                 <button class="p-3 text-lg font-bold text-white bg-gray-500" wire:click="resetFields" @click="detail='';sous_titre='';id=0">Clear</button>        
