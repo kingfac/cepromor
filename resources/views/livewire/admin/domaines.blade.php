@@ -7,11 +7,31 @@
                 <div class="flex flex-col gap-8 py-10">
                     <input type="text" class="w-full p-2 placeholder-gray-700 border-2 rounded-lg" placeholder="Domaine d'intervention" id="lib" wire:model="lib">
                     <textarea name="h" id="descri" wire:model="descri" class="p-2 placeholder-gray-600 transition transform border" placeholder="Votre description" ></textarea>
-                    <div class="grid grid-rows-2 gap-4">
+                    <div class="grid grid-rows-2 gap-4"
+                    x-data="{ isUploading: false, progress: 0 }"
+                    x-on:livewire-upload-start="isUploading = true"
+                    x-on:livewire-upload-finish="isUploading = false"
+                    x-on:livewire-upload-error="isUploading = false"
+                    x-on:livewire-upload-progress="progress = $event.detail.progress"
+                    >
                         <label class="flex flex-col items-center justify-center px-4 py-2 tracking-wide text-purple-600 uppercase transition-all duration-150 ease-linear bg-white border rounded-md shadow-md cursor-pointer border-blue hover:bg-purple-600 hover:text-white">
+                            @if ($photo)
+                                <a class="flex flex-col justify-center p-2 text-center shadow" href="#">
+                                    {{-- @if (Storage::exists('public/actualite/'.$inf->id.'.png'))     --}}
+                                        {{-- <img src="{{asset('storage/actualite/'.$inf->id.'.png')}}" > --}}
+                                        <img src="{{ $photo->temporaryUrl() }}" alt="Pas d'image pour cette actualite" srcset="" class="flex-1">
+                                    {{-- @endif --}}
+                                    <h1 class="text-lg font-bold ">Previsualiser l'image</h1>
+                                    <p class="text-gray-400">{{$titre}}  {{$sous_titre}}</p>
+                                </a>      
+                            @endif
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
                             <span class="px-3 mt-2 text-base leading-normal">Parcourir une image</span>
                             <input type='file' class="hidden" wire:model="photo" />
+                            <div x-show="isUploading">
+                                <progress max="100" x-bind:value="progress"></progress>
+                                <b x-text="progress"></b>%
+                            </div>
                         </label>
                         <button class="p-3 text-lg font-bold text-white bg-gray-500" wire:click="resetFields" @click="detail='';sous_titre='';id=0">Clear</button>        
                     </div>
