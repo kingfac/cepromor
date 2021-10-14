@@ -12,7 +12,7 @@
                         <button class="p-3 text-lg font-bold text-white bg-red-900" @click="modalController(2,'Confirmation','Etes-vous sûr de vouloir supprimer')">Supprimer</button>        
                         <button class="p-3 text-lg font-bold text-white bg-gray-500" wire:click="resetFields" @click="info='';lib='';id=0">Clear</button>        
                     </div>
-                    <div id="Editor" class="px-5 py-10 border editor" contenteditable="true" x-ref="editor" @click.away="info = $refs.editor.innerHTML; $wire.info = $refs.editor.innerHTML" x-html="info"></div>
+                    <div id="editor" class="px-5 py-10 border editor" contenteditable="true" x-ref="editor" @click.away="info = $refs.editor.innerHTML; $wire.info = $refs.editor.innerHTML" x-html="info"></div>
                     <textarea name="h" id="info" wire:model="info" class="hidden transition transform" x-model="info"></textarea>
                 </div> 
             </div>
