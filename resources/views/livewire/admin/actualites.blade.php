@@ -1,8 +1,17 @@
 <div class="flex flex-col gap-4" x-data>
-    {{-- In work, do what you enjoy. --}}
+    {{-- In work, do what you enjoy. --}} 
     <div class="px-4 py-4 shadow xl:px-72 lg:px-28">
-        <h1 class="mb-5 text-2xl text-center">Gestion d'actualite de cepromor & aeph</h1>
+        <h1 class="mb-5 text-2xl text-center">Gestion d'actualite de cepromor & aeph </h1>
         <div class="flex gap-4">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="flex flex-col flex-1 gap-4">
                 <input type="text" placeholder="Le titre de l'actualite" class="p-2 border rounded" wire:model="titre">
                 <input type="text" placeholder="Le sous titre de l'actualite" class="p-2 border rounded" wire:model="sous_titre">
