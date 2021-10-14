@@ -22,6 +22,7 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
                     <span class="px-3 mt-2 text-base leading-normal">Parcourir une image</span>
                     <input type='file' class="hidden" wire:model="photo" />
+                    <div wire:loading wire:target="photo">Uploading...</div>
                 </label>
                 <button class="p-3 text-lg font-bold text-white bg-gray-500" wire:click="resetFields" @click="detail='';sous_titre='';id=0">Clear</button>        
             </div>
