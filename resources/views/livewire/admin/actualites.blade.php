@@ -17,12 +17,20 @@
                 <input type="text" placeholder="Le sous titre de l'actualite" class="p-2 border rounded" wire:model="sous_titre">
                 <textarea name="" id="" class="flex-1 p-2 border rounded" placeholder="La description de l'actualite" wire:model="descri"></textarea>
             </div>
-            <div class="grid grid-rows-2 gap-4">
+            <div class="grid grid-rows-2 gap-4"
+            x-data="{ isUploading: false, progress: 0 }"
+            x-on:livewire-upload-start="isUploading = true"
+            x-on:livewire-upload-finish="isUploading = false"
+            x-on:livewire-upload-error="isUploading = false"
+            x-on:livewire-upload-progress="progress = $event.detail.progress"
+            >
                 <label class="flex flex-col items-center justify-center px-4 py-2 tracking-wide text-purple-600 uppercase transition-all duration-150 ease-linear bg-white border rounded-md shadow-md cursor-pointer border-blue hover:bg-purple-600 hover:text-white">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
                     <span class="px-3 mt-2 text-base leading-normal">Parcourir une image</span>
                     <input type='file' class="hidden" wire:model="photo" />
-                    <div wire:loading wire:target="photo">Uploading...</div>
+                    <div x-show="isUploading">
+                        <progress max="100" x-bind:value="progress"></progress>
+                    </div>
                 </label>
                 <button class="p-3 text-lg font-bold text-white bg-gray-500" wire:click="resetFields" @click="detail='';sous_titre='';id=0">Clear</button>        
             </div>
