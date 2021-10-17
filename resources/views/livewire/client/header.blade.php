@@ -15,8 +15,8 @@
                     @endif
                 </ul>
             </div>
-            <div class="absolute items-center w-4/5 text-center bg-blue-900 splide__progress md:bottom-48 bottom-36 md:w-1/2">
-                <div class="splide__progress__bar">
+            <div class="absolute items-center w-4/5 text-center bg-blue-900 splide__progress ">
+                <div class="mt-32 splide__progress__bar">
                 </div>
             </div>            
         </div>
@@ -24,15 +24,15 @@
             <div class="flex flex-col items-center  text-white hv-60 {{-- bg-black-transparent --}} w-screen left-0 absolute top-0 pt-20">
                 <img src="{{asset('images/logocepro.png')}}" alt="" srcset="" class="mb-5 h-1/4">
                 <p class="px-5 mb-2 bg-blue-900">BIENVENUE</p>
-                <h1 class="pb-3 text-4xl font-extrabold">{{$infos[0]->titre}}</h1>
+                <h1 class="pb-3 text-xl font-extrabold lg:text-4xl sm:text-2xl md:text-3xl">{{$infos[0]->titre}}</h1>
                 {{-- <h1 class="text-6xl font-bold">Ensemble Aidons Nos Frères</h1> --}}
-                <h1 class="p-4 text-lg font-extrabold xl:text-6xl bg-black-transparent animate__animated animate__bounceInDown md:text-4xl lg:text-4xl">{{$infos[0]->descri}}</h1>
+                <h1 class="p-4 font-extrabold xl:text-6xl bg-black-transparent animate__animated animate__bounceInDown md:text-4xl lg:text-4xl">{{$infos[0]->descri}}</h1>
                                 
             </div>
-            <div class="grid grid-rows-2 gap-6 md:grid-cols-2 lg:px-40 xl:px-1">
+            {{-- <div class="gap-6 sm:grid sm:grid-rows-2 md:grid md:grid-cols-2 lg:px-40 xl:px-1 ">
                 <button class="p-3 font-semibold transition duration-300 transform bg-yellow-600 rounded-lg hover:scale-90">Devenir partenaire</button>
                 <button class="p-3 font-semibold transition duration-300 transform rounded-lg ring-yellow-600 ring-2 hover:scale-90">Devenir partenaire</button>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
