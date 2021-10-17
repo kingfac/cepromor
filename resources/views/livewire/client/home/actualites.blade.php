@@ -6,7 +6,7 @@
         <h1 class="text-xl font-bold text-center xl:text-3xl md:text-1xl lg:text-2xl">Récentes actualités</h1>
         <h1 class="w-16 mt-1 border-b-8 border-yellow-600"></h1>
     </div>
-    <div class="px-10 py-1">
+    <div class="px-5 py-1">
         <div class="splide" id="actuSplide">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -49,7 +49,7 @@
                 <?php echo $ceproInfos[2]->info; ?>
             </div>...
         </div>
-        <a href="{{route('pages', ['page'=>'cepromor', 'el'=>'2'])}}" class="w-11/12 px-6 py-3 mb-2 text-lg font-bold text-center text-white bg-yellow-600 rounded">Lire la suite</a>
+        <a href="{{route('pages', ['page'=>'cepromor', 'el'=>'2'])}}" class="w-11/12 px-6 py-2 mb-2 text-lg font-bold text-center text-white bg-yellow-600 rounded">Lire la suite</a>
 
     </div>
     <div class="flex flex-col items-center justify-between flex-1 shadow">
@@ -62,7 +62,7 @@
                 <?php echo $ceproInfos[3]->info; ?>
             </div>...
         </div>
-        <a href="{{route('pages', ['page'=>'cepromor', 'el'=>'3'])}}" class="w-11/12 px-6 py-3 mb-2 text-lg font-bold text-center text-white bg-yellow-600 rounded">Lire la suite</a>
+        <a href="{{route('pages', ['page'=>'cepromor', 'el'=>'3'])}}" class="w-11/12 px-6 py-2 mb-2 text-lg font-bold text-center text-white bg-yellow-600 rounded">Lire la suite</a>
 
     </div>    
     

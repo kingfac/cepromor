@@ -49,13 +49,13 @@
                 @foreach ($conts as $ligne)
                 <div class="flex border-b-2 md:justify-start felx-col">
                     <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{$ligne->icon}}"></path></svg>
-                    <b class="flex-1 py-2 text-xl text-center text-white">{{$ligne->lib}}</b>
+                    <b class="flex-1 py-2 text-center text-white md:text-xl lg:text-xl">{{$ligne->lib}}</b>
                 </div>
                 @endforeach
             </div>
         </div>
     </div>
 </div>
-<div class="py-2 text-center text-white bg-gray-900 divide-y-2">
+<div class="py-2 text-xs text-center text-white bg-gray-900 divide-y-2">
     2020 by Glodi nsuadi kiese & Lebeau yamba => devéloppeurs
 </div>

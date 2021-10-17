@@ -1,4 +1,4 @@
-<div id="temoignage" class="px-20 py-10 bg-gray-100">
+<div id="temoignage" class="py-10 bg-gray-100 md:px-20 lg:px-20 sm:px-20">
     {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
     <div class="flex flex-col items-center justify-center pb-20 text-center">
         <h1 class="text-xl font-bold text-center xl:text-3xl md:text-1xl lg:text-2xl">Témoignages</h1>
