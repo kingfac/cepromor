@@ -30,7 +30,7 @@
         </button>
         @livewireScripts
         <script src="{{asset('js/app.js')}}"></script>
-        <script src="{{asset('js/alpine/alpine_cdn.min.js')}}"></script>
+        {{-- <script src="{{asset('js/alpine/alpine_cdn.min.js')}}"></script> --}}
         {{-- <script src="{{asset('js/swiper/swiper-bundle.min.js')}}"></script> --}}
         <script src="{{asset('splide/dist/js/splide.min.js')}}"></script>
         <script src="{{asset('js/init.js')}}"></script>
