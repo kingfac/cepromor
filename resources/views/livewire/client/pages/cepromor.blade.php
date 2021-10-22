@@ -15,7 +15,7 @@
         {{-- Do your work, then step back. --}}
     <div class="text-center">
         {{-- <img src="{{asset('storage/headerInfo/'.$headers[0]->id.'.png')}}" alt="" class="object-cover w-full h-60"> --}}
-        <h1 class="mb-5 text-2xl font-bold">APROPOS DU CEPROMOR&AEPH</h1>
+        <h1 class="py-5 font-bold md:text-2xl">APROPOS DU CEPROMOR&AEPH</h1>
         <hr>
     </div>
     <div class="flex flex-col">
