@@ -4,7 +4,7 @@
 </div>
 
 <div class="relative grid w-full grid-cols-1 gap-4 px-10 md:grid-cols-3 -top-32 md:px-10 lg:px-20 animate__animated animate__bounceIn xl:px-60">
-    <a class="flex flex-col items-center justify-center py-10 text-center transition duration-300 transform bg-white rounded shadow hover:scale-105" href="{{route('pages', ['page'=>'dons', 'el'=>'null'])}}">
+    <a class="z-0 flex flex-col items-center justify-center py-10 text-center transition duration-300 transform bg-white rounded shadow hover:scale-105" href="{{route('pages', ['page'=>'dons', 'el'=>'null'])}}">
         {{-- <i class="font-bold text-blue-900 text-7xl fa fa-user"></i> --}}
         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-900 sm:w-24 sm:h-24 md:w-24 md:h-24 lg:w-24 lg:h-24" viewBox="0 0 20 20" fill="currentColor">
             <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />

@@ -1,4 +1,4 @@
-<div class="px-10 py-20 bg-gray-100">
+<div class="px-2 py-20 bg-gray-100 md:px-10">
     {{-- Success is as dangerous as failure. --}}
     
     <div class="flex flex-col gap-5">

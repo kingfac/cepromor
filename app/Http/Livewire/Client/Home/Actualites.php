@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Client\Home;
 
-use App\Models\actualite;
+use App\Models\actualite; 
 use App\Models\infoHeader;
 use App\Models\ceproInfo;
 

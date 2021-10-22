@@ -29,6 +29,7 @@ const scrolleur = document.querySelector('#scrolleur');
 const nav = document.querySelector('#nav');
 scrolleur.classList.add('scale-0');
 nav.classList.add('absolute');
+nav.classList.add('bg-black-transparent-nav');
 window.addEventListener('scroll', (e) => {
   
   //console.log(document.body.scrollTop);
@@ -36,6 +37,8 @@ window.addEventListener('scroll', (e) => {
     scrolleur.classList.remove('scale-0');
     nav.classList.remove('absolute');
     nav.classList.add('fixed');
+    nav.classList.add('bg-gray-900');
+    nav.classList.remove('bg-black-transparent-nav');
      
   }
   else {
@@ -43,6 +46,8 @@ window.addEventListener('scroll', (e) => {
     //scrolleur.classList.remove('block')
     nav.classList.add('absolute');
     nav.classList.remove('fixed');
+    nav.classList.remove('bg-gray-900');
+    nav.classList.add('bg-black-transparent-nav');
   }
 });
 
