@@ -50,7 +50,6 @@
             </div>...
         </div>
         <a href="{{route('pages', ['page'=>'cepromor', 'el'=>'2'])}}" class="w-11/12 px-6 py-2 mb-2 text-lg font-bold text-center text-white bg-yellow-600 rounded">Lire la suite</a>
-
     </div>
     <div class="flex flex-col items-center justify-between flex-1 shadow">
         <div class="img">
