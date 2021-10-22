@@ -88,8 +88,8 @@
                 <div class="flex items-center justify-between w-full">
                     {{-- actu projetRecent nous temoignage partenaires volontaires --}} 
                     <a href="{{route('client')}}" class="flex flex-row ">
-                        <img src="{{asset('images/logocepro.png')}}" alt="" class="w-10 h-10">
-                        <div class="relative w-4/5 px-3 text-white md:block">
+                        <img src="{{asset('images/logocepro.png')}}" alt="" class="w-10 h-10 ">
+                        <div class="relative px-3 text-white md:block">
                             <h1 class="font-bold">CEPROMOR &AEPH </h1>
                             <h1 class="text-xs font-bold">ASBL/ONGD</h1>
                         </div>
