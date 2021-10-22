@@ -25,8 +25,8 @@
 
 
 
-const scrolleur = document.querySelector('#scrolleur');
-const nav = document.querySelector('#nav');
+const scrolleur = document.getElementById('scrolleur');
+const nav = document.getElementById('nav');
 scrolleur.classList.add('scale-0');
 nav.classList.add('absolute');
 nav.classList.add('bg-black-transparent-nav');
