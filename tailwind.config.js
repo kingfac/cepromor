@@ -11,17 +11,17 @@ module.exports = {
 
     theme: {
         extend: {
-            fontFamily: {
+            /* fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-            },
+            }, */
         },
     },
 
     variants: {
-        extend: {
+        /* extend: {
             opacity: ['disabled'],
-        },
+        }, */
     },
 
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    plugins: [/* require('@tailwindcss/forms'), require('@tailwindcss/typography') */],
 };

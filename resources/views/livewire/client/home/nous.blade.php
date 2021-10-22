@@ -1,4 +1,4 @@
-<div class="px-10 pb-40 text-center text-white bg-yellow-600 sm:pt-10 sm:font-bold md:font-bold lg:font-bold md:pt-10 lg:p-5" id="nous">
+<div class="px-10 pb-40 text-center text-white bg-yellow-600" id="nous">
     <h1 class="pt-8 text-xs md:text-lg lg:text-lg sm:text-lg">CENTRE POUR LA PROMOTION  DU MONDE RURAL
         ACTION EVANGILE ET  PROMOTION HUMAINE</h1>
 </div>

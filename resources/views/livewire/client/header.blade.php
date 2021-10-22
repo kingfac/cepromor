@@ -15,8 +15,8 @@
                     @endif
                 </ul>
             </div>
-            <div class="absolute items-center w-4/5 text-center bg-blue-900 splide__progress ">
-                <div class="mt-32 splide__progress__bar">
+            <div class="absolute top-0 items-center w-full text-center bg-blue-900 splide__progress">
+                <div class="block -mt-5 splide__progress__bar">
                 </div>
             </div>            
         </div>
