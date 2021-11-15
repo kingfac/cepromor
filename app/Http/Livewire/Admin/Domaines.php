@@ -39,7 +39,7 @@ class Domaines extends Component
        $record = domaine::create($validatedData);
        $this->lastId = $record->id;
        $this->validate([
-        'photo'=>'required'
+        'photo' => 'image|max:2048', // 1MB Max
     ]);
     $this->photo->storePubliclyAs('public/domaine/', $record->id.'.png');
        session()->flash('message', 'domaine enregistré avec succès');

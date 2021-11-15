@@ -45,7 +45,7 @@ class Banks extends Component
        $record = bank::create($validatedData);
        $this->lastId = $record->id;
        $this->validate([
-        'photo'=>'required'
+        'photo' => 'image|max:2048', // 1MB Max
     ]);
     $this->photo->storePubliclyAs('public/bank/', $record->id.'.png');
        session()->flash('message', 'bank enregistré avec succès');
