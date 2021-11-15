@@ -8,7 +8,7 @@
     @if (count($temoignages) > 0)
     <livewire:client.home.temoignages />
     @endif
-    <livewire:client.home.partenaires />
+    <livewire:client.home.partenaires color="{{(count($temoignages) > 0) ? 'bg-white' : 'bg-gray-100'}}" />
     <livewire:client.nav />
     <livewire:client.footer />
 </div>

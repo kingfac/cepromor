@@ -1,4 +1,4 @@
-<div id="partenaires" class="py-10 overflow-auto"> 
+<div id="partenaires" class="py-10 overflow-auto {{$color}}"> 
     {{-- Care about people's approval and you will be their prisoner. --}}
     <div class="flex flex-col items-center justify-center pb-20 text-center">
         <h1 class="text-xl font-bold text-center xl:text-3xl md:text-1xl lg:text-2xl">Partenaires</h1>
