@@ -10,14 +10,14 @@
                     <h1 class="text-xs font-bold">ASBL/ONGD</h1>
                 </div>
             </a>
-            <p class="text-lg text-center text-white md:text-justify">
+            <p class="text-center text-white md:text-justify">
                 CENTRE POUR LA PROMOTION  DU MONDE RURALACTION EVANGILE ET  PROMOTION HUMAINE
                 ASBL/ONGD<br/>
                 BP.195 Inkisi /Kongo central<br/>
                 République Démocratique du Congo
             </p>
 
-            <div class="grid grid-rows-1 gap-2 text-lg text-gray-400 li jus">
+            <div class="grid grid-rows-1 gap-2 text-gray-400 li jus">
                 <a href="#" class="px-10 py-1 text-center transition duration-150 transform border-r-8 bg-black-transparent hover:-skew-x-12 md:text-justify">Projets</a> 
                 <a href="#" class="px-10 py-1 text-center transition duration-150 transform border-r-8 bg-black-transparent hover:-skew-x-12 md:text-justify">Actualités</a> 
                 <a href="#" class="px-10 py-1 text-center transition duration-150 transform border-r-8 bg-black-transparent hover:-skew-x-12 md:text-justify">Domaines d'intervention</a> 
@@ -49,7 +49,7 @@
                 @foreach ($conts as $ligne)
                 <div class="flex border-b-2 md:justify-start felx-col">
                     <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{$ligne->icon}}"></path></svg>
-                    <b class="flex-1 py-2 text-center text-white md:text-xl lg:text-xl">{{$ligne->lib}}</b>
+                    <b class="flex-1 py-2 text-center text-white ">{{$ligne->lib}}</b>
                 </div>
                 @endforeach
             </div>

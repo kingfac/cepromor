@@ -39,8 +39,8 @@
         <h1 class="pb-10 text-xl font-bold text-center xl:text-3xl md:text-left md:text-1xl lg:text-2xl"><span class="border-b-8 border-yellow-600">Bien</span>venu à <span class="text-yellow-600">Cepromor</span> & Aeph </h1>
         <div class="flex flex-col justify-between h-4/5">
             <div class="text-justify text-article">
-                <?php echo $ceproInfos[0]->info; ?>
-            </div>...
+                <?php echo $ceproInfos[0]->info; ?>...
+            </div>
             <a href="{{route('pages', ['page'=>'cepromor', 'el'=>'1'])}}" class="flex justify-between p-2 mt-10 text-center text-white transition duration-200 transform bg-yellow-600 sm:w-1/2 md:mt-0 hover:scale-105 md:w-1/2 lg:w-1/2">
                 <b>En savoir plus</b>
                 <b>></b>
