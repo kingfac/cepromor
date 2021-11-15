@@ -44,7 +44,7 @@ class Actualites extends Component
             'descri'=>'required'
         ]);
         $this->validate([
-            'photo'=>'required'
+            'photo' => 'image|max:5000', // 1MB Max
         ]);
         $record = actualite::create($validateactualite);
         $this->photo->storePubliclyAs('public/actualite/', $record->id.'.png');
