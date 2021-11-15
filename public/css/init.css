@@ -65,7 +65,7 @@ html {
 }
 
 .text-article {
-    height: 50px;
+    height: 200px;
     /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
