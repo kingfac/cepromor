@@ -33,7 +33,7 @@
 
 <div class="flex flex-col px-10 pb-10 xl:px-72 md:px-10 lg:px-20 md:flex-row">
     <div class="flex-1">
-        <img src="{{asset('images/IMG_20200721_160847_236.jpg')}}" alt="" srcset="" class="object-cover">
+        <img src="{{asset('images/IMG_20200721_160847_236.jpg')}}?{{ rand() }}" alt="" srcset="" class="object-cover">
     </div>
     <div class="flex-1 pt-10 md:px-10 md:pt-0">
         <h1 class="pb-10 text-xl font-bold text-center xl:text-3xl md:text-left md:text-1xl lg:text-2xl"><span class="border-b-8 border-yellow-600">Bien</span>venu à <span class="text-yellow-600">Cepromor</span> & Aeph </h1>

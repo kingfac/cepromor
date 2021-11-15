@@ -110,7 +110,7 @@
                     @foreach ($galleries as $gal)
                         @if ($gal->activite_id == $actu->id)
                             <div class="container">
-                                <img src="{{asset('storage/galleries/'.$gal->id.'.png')}}" alt="">
+                                <img src="{{asset('storage/galleries/'.$gal->id.'.png')}}?{{ rand() }}" alt="">
                                  <span class="title">{{$gal->titre}}</span>
                                 <span class="text">
                                     <button class="px-10 py-3 text-lg bg-blue-900" @click="zoom=true;img={{$gal->id}}">Zoom</button>

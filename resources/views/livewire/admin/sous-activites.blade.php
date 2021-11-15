@@ -161,7 +161,7 @@
                 @foreach ($imagesGalleries as $img)
                     @if ($img->sous_acti_id == $selectedId)
                         <div class="flex flex-col gap-1 p-1 shadow">
-                            <img src="{{asset('storage/galleries/'.$img->id.'.png')}}" alt="" srcset="">
+                            <img src="{{asset('storage/galleries/'.$img->id.'.png')}}?{{ rand() }}" alt="" srcset="">
                             <div class="w-full px-1 py-2 -mt-10 bg-white">
                                 <input type="file" name="d" id="d" class=" wire:model="photo">
                             </div>

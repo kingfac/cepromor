@@ -59,7 +59,7 @@
             @foreach ($actualites as $inf)
                 <a class="flex flex-col justify-center p-2 text-center shadow" href="#" wire:click="charger({{$inf}})">
                     @if (Storage::exists('public/actualite/'.$inf->id.'.png'))    
-                        <img src="{{asset('storage/actualite/'.$inf->id.'.png')}}" alt="Pas d'image pour cette actualite" srcset="" class="flex-1">
+                        <img src="{{asset('storage/actualite/'.$inf->id.'.png')}}?{{ rand() }}" alt="Pas d'image pour cette actualite" srcset="" class="flex-1">
                     @endif
 
                     <h1 class="text-lg font-bold ">{{$inf->titre}}</h1>

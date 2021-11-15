@@ -12,7 +12,7 @@
                 <ul class="splide__list">
                     @foreach ($actualites as $actu)
                         <li class="splide__slide">
-                            <img src="{{asset('storage/actualite/'.$actu->id.'.png')}}" alt="" srcset="" class="object-cover w-screen hv-60 animate__animated animate__flash">
+                            <img src="{{asset('storage/actualite/'.$actu->id.'.png')}}?{{ rand() }}" alt="" srcset="" class="object-cover w-screen hv-60 animate__animated animate__flash">
                             <div class="relative h-48 px-5 py-5 -mt-40 md:-mt-28 bg-actu-transparent md:h-36 -top-8">
                                 <h1 class="pl-4 text-xl font-bold text-white border-l-8 border-blue-900">{{$actu->titre}}</h1>
                                 <p class="text-justify text-white">{{$actu->descri}}</p>
@@ -41,7 +41,7 @@
     </div>
     <div class="flex flex-col items-center justify-between flex-1 shadow">
         <div class="img">
-            <img src="{{asset('storage/headerInfo/'.$infos[3]->id.'.png')}}" alt="" class="object-cover">
+            <img src="{{asset('storage/headerInfo/'.$infos[3]->id.'.png')}}?{{ rand() }}" alt="" class="object-cover">
         </div>
         <div class="px-6 py-2 text-justify content">
             <h1 class="text-xl font-bold">{{$ceproInfos[2]->lib}}</h1>
@@ -53,7 +53,7 @@
     </div>
     <div class="flex flex-col items-center justify-between flex-1 shadow">
         <div class="img">
-            <img src="{{asset('storage/headerInfo/'.$infos[0]->id.'.png')}}" alt="" class="object-cover">
+            <img src="{{asset('storage/headerInfo/'.$infos[0]->id.'.png')}}?{{ rand() }}" alt="" class="object-cover">
         </div>
         <div class="px-6 py-2 text-justify content">
             <h1 class="text-xl font-bold">{{$ceproInfos[3]->lib}}</h1>

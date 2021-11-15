@@ -10,7 +10,7 @@
     <div class="grid w-full grid-cols-1 gap-6 px-10 mt-10 md:grid-cols-2 xl:px-72 md:px-10 lg:px-20 animate__animated animate__bounceIn">
         <div class="">
             <div class="">
-                <img src="{{asset('storage/volontaire/'.$volontaires[0]->id.'.png')}}" alt="" srcset="">
+                <img src="{{asset('storage/volontaire/'.$volontaires[0]->id.'.png')}}?{{ rand() }}" alt="" srcset="">
             </div>
         </div>
         <div class="flex flex-col justify-center gap-4 ">

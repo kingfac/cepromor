@@ -8,7 +8,7 @@
     <div class="grid grid-cols-1 gap-5 px-10 text-center sm:grid-cols-2 lg:grid-cols-4 md:px-10 md:grid-cols-3 lg:px-20">
         @foreach ($partenaires as $part)
         <a class="flex flex-col items-center justify-center mb-20 transition duration-200 transform cursor-pointer hover:scale-105"  href="<?php echo $part->url; ?>">
-            <img src="{{asset('storage/partenaire/'.$part->id.'.png')}}" alt="" class="w-1/2">
+            <img src="{{asset('storage/partenaire/'.$part->id.'.png')}}?{{ rand() }}" alt="" class="w-1/2">
             <p class="pt-2 text-lg font-bold">{{$part->lib}}</p>
         </a>
         @endforeach        

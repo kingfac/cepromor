@@ -55,7 +55,7 @@
             @foreach ($partenaires as $parte)
                 <a class="flex flex-col justify-center p-2 text-center shadow" href="#" wire:click="charger({{$parte}})">
                     @if (Storage::exists('public/partenaire/'.$parte->id.'.png'))    
-                        <img src="{{asset('storage/partenaire/'.$parte->id.'.png')}}" alt="Pas d'image pour cette partenaire" srcset="" class="flex-1">
+                        <img src="{{asset('storage/partenaire/'.$parte->id.'.png')}}?{{ rand() }}" alt="Pas d'image pour cette partenaire" srcset="" class="flex-1">
                     @endif
 
                     <h1 class="text-lg font-bold ">{{$parte->lib}}</h1>

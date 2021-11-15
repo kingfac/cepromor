@@ -98,7 +98,7 @@
             @foreach ($galleries as $gal)
                 @if ($gal->projet_id == $pro->id)
                     <div class="container">
-                        <img src="{{asset('storage/galleries/'.$gal->id.'.png')}}" alt="" class="w-full">
+                        <img src="{{asset('storage/galleries/'.$gal->id.'.png')}}?{{ rand() }}" alt="" class="w-full">
                          <span class="title">{{$gal->titre}}</span>
                         <span class="text">
                             <button class="px-10 py-3 text-lg bg-blue-900" @click="zoom=true;img={{$gal->id}}">Zoom</button>
@@ -114,7 +114,7 @@
             <h1 x-text="chemin">IMAGE ZOOME</h1>
             <button class="px-5 bg-red-700 hover:bg-red-900" @click="zoom=false">X</button>
         </div>
-        <div class="md:border zoom">
+        <div class="zoom">
             <img :src="zoomer('<?php echo asset('storage/galleries/'); ?>')" alt="Pas d'image" class="object-contain w-full" style="height: 80vh">
         </div>
     </div>

@@ -49,7 +49,7 @@
             @foreach ($temoignages as $tem)
                 <a class="flex flex-col justify-center p-2 text-center shadow" href="#" wire:click="charger({{$tem}})">
                     @if (Storage::exists('public/temoignage/'.$tem->id.'.png'))    
-                        <img src="{{asset('storage/temoignage/'.$tem->id.'.png')}}" alt="Pas d'image pour cette temoignage" srcset="" class="flex-1">
+                        <img src="{{asset('storage/temoignage/'.$tem->id.'.png')}}?{{ rand() }}" alt="Pas d'image pour cette temoignage" srcset="" class="flex-1">
                     @endif
 
                     <h1 class="text-lg font-bold ">{{$tem->noms}} / {{$tem->email}}</h1>

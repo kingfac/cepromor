@@ -11,7 +11,7 @@
         <div class="w-full px-5 pt-5 pb-10 mx-auto text-gray-800 bg-white rounded-lg shadow-lg dark:bg-gray-800 dark:text-gray-50">
             <div class="w-full pt-1 pb-5 mx-auto -mt-16 text-center">
                 <a href="#" class="relative block">
-                    <img alt="profil" src="{{asset('storage/temoignage/'.$tem->id.'.png')}}" class="object-cover w-20 h-20 mx-auto rounded-full "/>
+                    <img alt="profil" src="{{asset('storage/temoignage/'.$tem->id.'.png')}}?{{ rand() }}" class="object-cover w-20 h-20 mx-auto rounded-full "/>
                 </a>
             </div>
             <div class="w-full mb-10">

@@ -164,7 +164,7 @@
                 @foreach ($imagesGalleries as $img)
                     @if ($img->projet_id == $selectedId)
                         <div class="flex flex-col gap-1 p-1 shadow">
-                            <img src="{{asset('storage/galleries/'.$img->id.'.png')}}" alt="" srcset="">
+                            <img src="{{asset('storage/galleries/'.$img->id.'.png')}}?{{ rand() }}" alt="" srcset="">
                             <input type="file" name="d" id="d" class="w-full px-10 py-2 -mt-10" wire:model="photo">
                             <div class="flex justify-between">
                                 <input type="text" class="w-full py-2 text-center border rounded-md font-xl" placeholder="Saisir un commentaire"  wire:change="editGallerie({{$loop->index}}, $event.target.value, {{$img->id}})" value="{{$img->titre}}">

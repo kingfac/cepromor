@@ -27,7 +27,7 @@
             @foreach ($banks as $bank)    
             <div class="flex flex-col items-center justify-center gap-4 p-4 mb-4 shadow md:flex-row">
                 <div class="p-2">
-                    <img src="{{asset('storage/bank/'.$bank->id.'.png')}}" alt="" class="md:w-1/2">
+                    <img src="{{asset('storage/bank/'.$bank->id.'.png')}}?{{ rand() }}" alt="" class="md:w-1/2">
                 </div>
                 <div class="flex flex-col gap-5">
                     <div class="font-bold md:text-2xl">

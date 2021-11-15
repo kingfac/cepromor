@@ -179,7 +179,7 @@
                 @foreach ($imagesGalleries as $img)
                     @if ($img->activite_id == $selectedId)
                         <div class="flex flex-col gap-1 p-1 shadow">
-                            <img src="{{asset('storage/galleries/'.$img->id.'.png')}}" alt="" srcset="">
+                            <img src="{{asset('storage/galleries/'.$img->id.'.png')}}?{{ rand() }}" alt="" srcset="">
                             {{-- <input type="file" name="d" id="d" class="w-full px-10 py-2 -mt-10" wire:model="photo"> --}}
                             <label class="flex items-center justify-center px-4 py-2 tracking-wide text-purple-600 uppercase transition-all duration-150 ease-linear bg-white border rounded-md shadow-md cursor-pointer border-blue hover:bg-purple-600 hover:text-white">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
