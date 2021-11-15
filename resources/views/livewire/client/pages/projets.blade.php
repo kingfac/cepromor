@@ -123,7 +123,7 @@
             <h1>Videos</h1>
             <button class="px-5 bg-red-700 hover:bg-red-900" @click="youtube=false">X</button>
         </div>
-        <div class="border zoom">
+        <div class="zoom">
             <iframe 
                 class="w-full md:h-full ring-blue-900 ring-8 ring-inset"
                 style="height: 80vh"
