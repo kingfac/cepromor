@@ -145,7 +145,7 @@
                 <h1 class="font-extrabold">A PROPOS DE CEPROMOR  & AEPH </h1>
                 <button class="bg-yellow-600" @click="cepro=!cepro;open=!open">X</button>
             </div>
-            <div class="grid text-left bg-gray-900 divide-y-2 divide-gray-600 md:bg-transparent lg:grid-cols-5">
+            <div class="grid text-left bg-gray-900 divide-y-2 divide-gray-600 lg:grid-cols-5">
                 @foreach ($ceproInfos as $inf)
                     <a href="{{route('pages', ['page' => 'cepromor', 'el'=> $inf->id.'/#info'.$inf->id])}}" class="px-2 py-5 text-xl font-bold text-left transition duration-300 transform bg-black-transparent hover:scale-95">{{$inf->lib}}</a>
                 @endforeach
@@ -157,7 +157,7 @@
                 <h1 class="font-extrabold">DOMAINES D'INTERVENTIONS DE CEPROMOR  & AEPH </h1>
                 <button class="px-4 bg-yellow-600" @click="domaine=!domaine;open=!open">X</button>
             </div>
-            <div class="grid {{-- divide-y-2 divide-yellow-600 --}} md:bg-transparent lg:grid-cols-2 {{-- lg:hidden --}}">
+            <div class="grid {{-- divide-y-2 divide-yellow-600 --}} bg-gray-900 lg:grid-cols-2 {{-- lg:hidden --}}">
                 @foreach ($domaines as $dom)
                     <a href="{{route('pages', ['page' => 'activite', 'el'=> $dom->id.'/#domaine'.$dom->id])}}" class="py-5 font-bold text-center transition duration-300 transform border border-gray-800 hover:scale-95" {{-- style="background-color: rgba(0, 0, 255, 0.137)" --}}>{{$dom->lib}}</a>
                 @endforeach
