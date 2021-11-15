@@ -47,10 +47,10 @@
             <h1 class="pb-10 text-xl font-bold text-yellow-600">Contacts</h1>
             <div class="grid grid-rows-1 gap-4">
                 @foreach ($conts as $ligne)
-                <div class="flex border-b-2 md:justify-start felx-col">
+                <a class="flex border-b-2 md:justify-start felx-col" href="{{(str_contains($ligne->lib, '@') ? 'mailto:'.$ligne->lib : (str_contains($ligne->lib, '+243') ? 'tel:'.$ligne->lib : 'http://'.$ligne->lib))}}">
                     <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{$ligne->icon}}"></path></svg>
                     <b class="flex-1 py-2 text-center text-white ">{{$ligne->lib}}</b>
-                </div>
+                </a>
                 @endforeach
             </div>
         </div>
